@@ -20,13 +20,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
-      
-    - name: do stuff
-      run: dir
-      
+      run: dotnet build --no-restore -a x64 -c Release --nologo      
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
         name: February
-        path: .\February.Core\bin\x64\Release\net6.0-windows\
+        path: D:\a\February.Core\bin\x64\Release\net6.0-windows\

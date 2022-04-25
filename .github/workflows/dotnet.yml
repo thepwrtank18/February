@@ -21,8 +21,13 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore -c Release --nologo      
-    - name: Upload artifacts
+    - name: Upload artifacts (Core)
       uses: actions/upload-artifact@v2
       with:
         name: February
-        path: D:\a\February.Core\bin\Release\net6.0-windows\
+        path: D:\a\February\February.Core\bin\Release\net6.0-windows\
+    - name: Upload artifacts (Dev)
+      uses: actions/upload-artifact@v2
+      with:
+        name: February
+        path: D:\a\February\February.Dev\bin\Release\net6.0-windows\

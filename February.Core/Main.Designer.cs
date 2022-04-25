@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TabPage_Danielle = new System.Windows.Forms.TabPage();
+            this.RenameFile_Danielle = new System.Windows.Forms.Button();
             this.TextBox_Danielle = new System.Windows.Forms.RichTextBox();
             this.DevOptions_Danielle = new System.Windows.Forms.Button();
             this.OpenFile_Danielle = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.InstallMod_Danielle = new System.Windows.Forms.Button();
             this.ModList_Danielle = new System.Windows.Forms.ListBox();
             this.TabPage_Whiplash = new System.Windows.Forms.TabPage();
+            this.RenameFile_Whiplash = new System.Windows.Forms.Button();
             this.TextBox_Whiplash = new System.Windows.Forms.RichTextBox();
             this.DevOptions_Whiplash = new System.Windows.Forms.Button();
             this.OpenFile_Whiplash = new System.Windows.Forms.Button();
@@ -64,6 +66,7 @@
             // 
             // TabPage_Danielle
             // 
+            this.TabPage_Danielle.Controls.Add(this.RenameFile_Danielle);
             this.TabPage_Danielle.Controls.Add(this.TextBox_Danielle);
             this.TabPage_Danielle.Controls.Add(this.DevOptions_Danielle);
             this.TabPage_Danielle.Controls.Add(this.OpenFile_Danielle);
@@ -81,6 +84,17 @@
             this.TabPage_Danielle.UseVisualStyleBackColor = true;
             this.TabPage_Danielle.Click += new System.EventHandler(this.TabPage_Danielle_Click);
             // 
+            // RenameFile_Danielle
+            // 
+            this.RenameFile_Danielle.Enabled = false;
+            this.RenameFile_Danielle.Location = new System.Drawing.Point(379, 298);
+            this.RenameFile_Danielle.Name = "RenameFile_Danielle";
+            this.RenameFile_Danielle.Size = new System.Drawing.Size(70, 23);
+            this.RenameFile_Danielle.TabIndex = 9;
+            this.RenameFile_Danielle.Text = "Rename";
+            this.RenameFile_Danielle.UseVisualStyleBackColor = true;
+            this.RenameFile_Danielle.Click += new System.EventHandler(this.RenameFile_Danielle_Click);
+            // 
             // TextBox_Danielle
             // 
             this.TextBox_Danielle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
@@ -95,9 +109,9 @@
             // DevOptions_Danielle
             // 
             this.DevOptions_Danielle.Enabled = false;
-            this.DevOptions_Danielle.Location = new System.Drawing.Point(536, 298);
+            this.DevOptions_Danielle.Location = new System.Drawing.Point(573, 298);
             this.DevOptions_Danielle.Name = "DevOptions_Danielle";
-            this.DevOptions_Danielle.Size = new System.Drawing.Size(110, 23);
+            this.DevOptions_Danielle.Size = new System.Drawing.Size(73, 23);
             this.DevOptions_Danielle.TabIndex = 7;
             this.DevOptions_Danielle.Text = "Developer";
             this.DevOptions_Danielle.UseVisualStyleBackColor = true;
@@ -106,7 +120,7 @@
             // OpenFile_Danielle
             // 
             this.OpenFile_Danielle.Enabled = false;
-            this.OpenFile_Danielle.Location = new System.Drawing.Point(418, 298);
+            this.OpenFile_Danielle.Location = new System.Drawing.Point(455, 298);
             this.OpenFile_Danielle.Name = "OpenFile_Danielle";
             this.OpenFile_Danielle.Size = new System.Drawing.Size(112, 23);
             this.OpenFile_Danielle.TabIndex = 6;
@@ -119,7 +133,7 @@
             this.DeleteFile_Danielle.Enabled = false;
             this.DeleteFile_Danielle.Location = new System.Drawing.Point(302, 298);
             this.DeleteFile_Danielle.Name = "DeleteFile_Danielle";
-            this.DeleteFile_Danielle.Size = new System.Drawing.Size(110, 23);
+            this.DeleteFile_Danielle.Size = new System.Drawing.Size(71, 23);
             this.DeleteFile_Danielle.TabIndex = 5;
             this.DeleteFile_Danielle.Text = "Delete";
             this.DeleteFile_Danielle.UseVisualStyleBackColor = true;
@@ -153,6 +167,7 @@
             this.InstallMod_Danielle.TabIndex = 1;
             this.InstallMod_Danielle.Text = "Install mod...";
             this.InstallMod_Danielle.UseVisualStyleBackColor = true;
+            this.InstallMod_Danielle.Click += new System.EventHandler(this.InstallMod_Danielle_Click);
             // 
             // ModList_Danielle
             // 
@@ -165,11 +180,13 @@
             this.ModList_Danielle.Location = new System.Drawing.Point(6, 6);
             this.ModList_Danielle.Name = "ModList_Danielle";
             this.ModList_Danielle.Size = new System.Drawing.Size(290, 344);
+            this.ModList_Danielle.Sorted = true;
             this.ModList_Danielle.TabIndex = 0;
             this.ModList_Danielle.SelectedIndexChanged += new System.EventHandler(this.ModList_Danielle_SelectedIndexChanged);
             // 
             // TabPage_Whiplash
             // 
+            this.TabPage_Whiplash.Controls.Add(this.RenameFile_Whiplash);
             this.TabPage_Whiplash.Controls.Add(this.TextBox_Whiplash);
             this.TabPage_Whiplash.Controls.Add(this.DevOptions_Whiplash);
             this.TabPage_Whiplash.Controls.Add(this.OpenFile_Whiplash);
@@ -186,6 +203,17 @@
             this.TabPage_Whiplash.Text = "Mooncrash";
             this.TabPage_Whiplash.UseVisualStyleBackColor = true;
             // 
+            // RenameFile_Whiplash
+            // 
+            this.RenameFile_Whiplash.Enabled = false;
+            this.RenameFile_Whiplash.Location = new System.Drawing.Point(379, 298);
+            this.RenameFile_Whiplash.Name = "RenameFile_Whiplash";
+            this.RenameFile_Whiplash.Size = new System.Drawing.Size(70, 23);
+            this.RenameFile_Whiplash.TabIndex = 12;
+            this.RenameFile_Whiplash.Text = "Rename";
+            this.RenameFile_Whiplash.UseVisualStyleBackColor = true;
+            this.RenameFile_Whiplash.Click += new System.EventHandler(this.RenameFile_Whiplash_Click);
+            // 
             // TextBox_Whiplash
             // 
             this.TextBox_Whiplash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
@@ -200,9 +228,9 @@
             // DevOptions_Whiplash
             // 
             this.DevOptions_Whiplash.Enabled = false;
-            this.DevOptions_Whiplash.Location = new System.Drawing.Point(536, 298);
+            this.DevOptions_Whiplash.Location = new System.Drawing.Point(573, 298);
             this.DevOptions_Whiplash.Name = "DevOptions_Whiplash";
-            this.DevOptions_Whiplash.Size = new System.Drawing.Size(110, 23);
+            this.DevOptions_Whiplash.Size = new System.Drawing.Size(73, 23);
             this.DevOptions_Whiplash.TabIndex = 10;
             this.DevOptions_Whiplash.Text = "Developer";
             this.DevOptions_Whiplash.UseVisualStyleBackColor = true;
@@ -210,7 +238,7 @@
             // OpenFile_Whiplash
             // 
             this.OpenFile_Whiplash.Enabled = false;
-            this.OpenFile_Whiplash.Location = new System.Drawing.Point(418, 298);
+            this.OpenFile_Whiplash.Location = new System.Drawing.Point(455, 298);
             this.OpenFile_Whiplash.Name = "OpenFile_Whiplash";
             this.OpenFile_Whiplash.Size = new System.Drawing.Size(112, 23);
             this.OpenFile_Whiplash.TabIndex = 9;
@@ -223,7 +251,7 @@
             this.DeleteFile_Whiplash.Enabled = false;
             this.DeleteFile_Whiplash.Location = new System.Drawing.Point(302, 298);
             this.DeleteFile_Whiplash.Name = "DeleteFile_Whiplash";
-            this.DeleteFile_Whiplash.Size = new System.Drawing.Size(110, 23);
+            this.DeleteFile_Whiplash.Size = new System.Drawing.Size(71, 23);
             this.DeleteFile_Whiplash.TabIndex = 8;
             this.DeleteFile_Whiplash.Text = "Delete";
             this.DeleteFile_Whiplash.UseVisualStyleBackColor = true;
@@ -259,6 +287,7 @@
             this.InstallMod_Whiplash.TabIndex = 3;
             this.InstallMod_Whiplash.Text = "Install mod...";
             this.InstallMod_Whiplash.UseVisualStyleBackColor = true;
+            this.InstallMod_Whiplash.Click += new System.EventHandler(this.InstallMod_Whiplash_Click);
             // 
             // ModList_Whiplash
             // 
@@ -271,6 +300,7 @@
             this.ModList_Whiplash.Location = new System.Drawing.Point(6, 6);
             this.ModList_Whiplash.Name = "ModList_Whiplash";
             this.ModList_Whiplash.Size = new System.Drawing.Size(290, 344);
+            this.ModList_Whiplash.Sorted = true;
             this.ModList_Whiplash.TabIndex = 0;
             this.ModList_Whiplash.SelectedIndexChanged += new System.EventHandler(this.ModList_Whiplash_SelectedIndexChanged);
             // 
@@ -280,6 +310,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 411);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "February";
@@ -314,5 +345,7 @@
         private Button DeleteFile_Whiplash;
         private RichTextBox TextBox_Danielle;
         private RichTextBox TextBox_Whiplash;
+        private Button RenameFile_Danielle;
+        private Button RenameFile_Whiplash;
     }
 }

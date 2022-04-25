@@ -17,4 +17,10 @@
     <ProjectReference Include="..\February.Dev\February.Dev.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="RenameMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>

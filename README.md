@@ -6,7 +6,9 @@ A mod manager for Prey (2017).
 * GOG
 * Epic Games
 
-Bethesda.net won't be supported, since 1. I don't own it, and 2. it's shutting down anyway.
+## Unsupported Platforms
+* Bethesda.net (just use Steam)
+* Microsoft Store (impossible due to Microsoft's DRM)
 
 ## February.Core
 Core is what you need to use mods. 

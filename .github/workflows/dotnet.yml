@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -21,3 +21,9 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+      
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: February
+        path: /home/runner/work/thepwrtank18/February/February.Core/bin/x64/Release/net6.0-windows/

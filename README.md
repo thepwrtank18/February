@@ -7,7 +7,7 @@ A mod manager for Prey (2017).
 * Epic Games
 
 ## Unsupported Platforms
-* Bethesda.net (just use Steam)
+* Bethesda.net (you'll end up using Steam anyway)
 * Microsoft Store (impossible due to Microsoft's DRM)
 
 ## February.Core
